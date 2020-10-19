@@ -45,4 +45,4 @@ inference
 ![2nd epoch.png](./imgs/2nd_epoch.png)  
 
 ## 2.4 3th epoch
-<img src="./imgs/1st_epoch.png" style="width:50px;height:50px">
+<img src="./imgs/1st_epoch.png" width="60%">
