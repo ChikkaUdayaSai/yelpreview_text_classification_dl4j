@@ -39,10 +39,10 @@ inference
 | 4  | 4 |   |  |   |  |
 
 ## 2.2 1st epoch
-![1st epoch.png](./imgs/1st_epoch.png)
+<div align=center><img src="./imgs/1st_epoch.png" width="50%"></div>
 
 ## 2.3 2nd epoch
-![2nd epoch.png](./imgs/2nd_epoch.png)  
+<div align=center><img src="./imgs/2nd_epoch.png" width="50%"></div> 
 
 ## 2.4 3th epoch
-<img src="./imgs/1st_epoch.png" width="60%">
+<div align=center><img src="./imgs/3th_epoch.png" width="50%"></div>
