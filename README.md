@@ -27,19 +27,19 @@ inference
 ## 1.3 Submit Items
 1. .jar files of your codes together with trained model.
 2. Source code (put it on GitHub)
-3. Log files (model training logs file is required)
+3. Log files (model training logs file is required).
 
 # 2. Results
 ## 2.1 Model Performance on Dataset (10%)
 |  Index   | Epoch  | Accuracy  | Precision  | Recall | F1 Score |
 |  ----  | ----  | ----  | ----  | ----  | ----  |
 | 1  | 1 | 0.6162  | 0.6194 | 0.6162  | 0.6172 |
-| 2  | 2 | 0.6238  | 0/6302 | 0.6238  | 0.6258 |
+| 2  | 2 | 0.6238  | 0.6302 | 0.6238  | 0.6258 |
 | 3  | 3 |   |  |   |  |
 | 4  | 4 |   |  |   |  |
 
 ## 2.2 1st epoch
-![1st epoch result](imgs/1st epoch.png?raw=true "1st epoch result") 
+![1st epoch.png](./imgs/1st epoch.png?raw=true "1st epoch result")
 
 ## 2.3 2nd epoch
-![1st epoch result](imgs/2nd epoch.png?raw=true "2nd epoch result")  
+![2nd epoch.png](./imgs/2nd epoch.png?raw=true "2nd epoch result")  
