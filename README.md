@@ -46,4 +46,4 @@ inference
 ![2nd epoch.png](./imgs/2nd_epoch.png?raw=true "2nd epoch result")  
 
 ## 2.4 3th epoch
-<img src="./imgs/1st_epoch.pn" style="zoom:50%">
+<img src="./imgs/1st_epoch.png" style="zoom:50%">
