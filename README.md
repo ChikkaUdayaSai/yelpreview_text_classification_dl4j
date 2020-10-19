@@ -39,7 +39,7 @@ inference
 | 4  | 4 |   |  |   |  |
 
 ## 2.2 1st epoch
-![1st epoch.png](./imgs/1st epoch.png?raw=true "1st epoch result")
+![1st epoch.png](./imgs/1st_epoch.png?raw=true "1st epoch result") 
 
 ## 2.3 2nd epoch
-![2nd epoch.png](./imgs/2nd epoch.png?raw=true "2nd epoch result")  
+![2nd epoch.png](./imgs/2nd_epoch.png?raw=true "2nd epoch result")  
