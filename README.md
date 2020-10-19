@@ -30,7 +30,7 @@ inference
 3. Log files (model training logs file is required).
 
 # 2. Results
-## 2.1 Model Performance on Dataset (10%)
+## 2.1 Model Performance on Dataset (10% as test set)
 |  Index   | Epoch  | Accuracy  | Precision  | Recall | F1 Score |
 |  ----  | ----  | ----  | ----  | ----  | ----  |
 | 1  | 1 | 0.6162  | 0.6194 | 0.6162  | 0.6172 |
@@ -39,7 +39,11 @@ inference
 | 4  | 4 |   |  |   |  |
 
 ## 2.2 1st epoch
-![1st epoch.png](./imgs/1st_epoch.png?raw=true "1st epoch result") 
+![1st epoch.png](./imgs/1st_epoch.png){:height="100" width="100"}
+
 
 ## 2.3 2nd epoch
 ![2nd epoch.png](./imgs/2nd_epoch.png?raw=true "2nd epoch result")  
+
+## 2.4 3th epoch
+<img src="./imgs/1st_epoch.pn" style="zoom:50%">
