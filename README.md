@@ -101,7 +101,12 @@ testFactor=1.1
 java -jar PrepareDataset.jar /your/config/path
 ```
 
+
 ## 3.4 Train
+Modify JVM settings to
+```
+-Xms1G -Xmx8G -Dorg.bytedeco.javacpp.maxbytes=14G -Dorg.bytedeco.javacpp.maxphysicalbytes=16G
+```
   Download the [TrainReviews.jar]()
 ```
 java -jar TrainReviews.jar /your/config/path
