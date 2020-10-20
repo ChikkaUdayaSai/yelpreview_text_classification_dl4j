@@ -110,4 +110,9 @@ click the 'Check' button. Then it shows the category of that sentence.
 
 ![UI](imgs/Inference_UI.png?raw=true "Inference UI")
 
+  # 4. References
+  [Deeplearning examples](https://github.com/eclipse/deeplearning4j-examples) put on github
+  makes this task easier, such as [ImdbReviewClassificationRNN](https://github.com/eclipse/deeplearning4j-examples/blob/master/dl4j-examples/src/main/java/org/deeplearning4j/examples/advanced/modelling/textclassification/pretrainedword2vec/ImdbReviewClassificationRNN.java)
+  and [customcorpusword2vec](https://github.com/eclipse/deeplearning4j-examples/blob/master/dl4j-examples/src/main/java/org/deeplearning4j/examples/advanced/modelling/textclassification/customcorpusword2vec/TrainNews.java)
+
 
