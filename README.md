@@ -26,9 +26,9 @@ inference
 4. The cleanliness and the structure of the code.
 
 ## 1.3 Submit Items
-1. .jar files of your codes together with trained model. (See on [Baidu Yunpan]() )
-2. Source code (put it on [GitHub]())
-3. Log files (model training logs file is required. See [train.log]()).
+1. .jar files of your codes together with trained model. (See on [Baidu Yunpan](https://pan.baidu.com/s/1olbxijXOpF0mEhJ0WmyQZg), password:dl4j )
+2. Source code (put it on [GitHub](https://github.com/jackspiderman/yelpreview_text_classification_dl4j))
+3. Log files (model training logs file is required. See [train.log](https://github.com/jackspiderman/yelpreview_text_classification_dl4j/blob/main/train.log)).
 
 # 2. Model Performance on Dataset (10% as test set)
 ## 2.1 Evaluation Metrics
@@ -79,12 +79,35 @@ inference
   
   # 3. Usage
   
-  ## 3.1 edit configuration file
+  ## 3.1 download best model or trained
+  
+  
+  ## 3.2 edit configuration file
   following properities should be set before using.
   dataDir = /the/path/of/yelpreview
   
   
-  ## 3.2 Prepare Training Data and Testing Data
-  ```
+  ## 3.3 Prepare Training Data and Testing Data
+```
 java -jar PrepareDataset.jar /your/config/path
 ```
+
+## 3.4 Train
+```
+java -jar TrainReviews.jar /your/config/path
+```
+
+
+## 3.5 Inference
+Download the best [model](https://pan.baidu.com/s/1olbxijXOpF0mEhJ0WmyQZg) (pwd: dl4j)or train another one. 
+Then add path of the model to the configuration file. 
+```
+java -jar TestReviews.jar /your/config/path
+```
+### Example:
+Key in a sentence into the input box, 
+click the 'Check' button. Then it shows the category of that sentence.
+
+![Inference_UI](./imgs/Inference_UI.PNG)
+
+
