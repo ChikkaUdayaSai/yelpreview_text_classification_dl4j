@@ -118,7 +118,7 @@ java -jar TrainReviews.jar /your/config/path
 
 ## 3.5 Inference
 Download the best [model](https://pan.baidu.com/s/1olbxijXOpF0mEhJ0WmyQZg) (password: dl4j) 
- and the [TestReviews.jar](https://pan.baidu.com/s/1_gyWTb1o1koecC1H0LqGGw) (password: dl4j) , and copy [Categories.txt]() to your local directory.
+ and the [TestReviews.jar](https://pan.baidu.com/s/1_gyWTb1o1koecC1H0LqGGw) (password: dl4j) , and copy [Categories.txt](https://github.com/jackspiderman/yelpreview_text_classification_dl4j/blob/main/categories.txt) to your local directory.
 Then edit those paths to the configuration file. 
 ```
 java -jar TestReviews.jar /your/config/path
