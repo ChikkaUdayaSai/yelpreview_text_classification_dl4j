@@ -28,8 +28,8 @@ inference.(See [PrepareData.jar](), [TrainReviews.jar]() and [TestReviews.jar]()
 ## 1.3 Submit Items
 1. .jar files of your codes together with trained model. (See on [Baidu Yunpan](https://pan.baidu.com/s/1olbxijXOpF0mEhJ0WmyQZg), password:dl4j )
 2. Source code (put it on [GitHub](https://github.com/jackspiderman/yelpreview_text_classification_dl4j))
-3. Log files (model training logs file is required. See [train.log](https://github.com/jackspiderman/yelpreview_text_classification_dl4j/blob/main/train.log))
-and [preprocessing.log]().
+3. Log files (model training logs file is required. (See [train.log](https://github.com/jackspiderman/yelpreview_text_classification_dl4j/blob/main/train.log)
+and [preprocessing.log](https://github.com/jackspiderman/yelpreview_text_classification_dl4j/blob/main/preprocess.log)).
 
 # 2. Model Performance on Dataset (10% as test set)
 ## 2.1 Evaluation Metrics
@@ -88,7 +88,10 @@ and [preprocessing.log]().
   ## 3.2 Edit configuration file
   following properities should be set before using.
   ```
-  dataDir = /the/path/of/yelpreview
+rawDataDir=/your/yelp_review_full_csv/file/path
+dataDir=/your/post/data/directory
+trainRatio=0.9
+testFactor=1.1
   ```
   
   

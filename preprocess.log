@@ -1,14 +1,14 @@
-10:45:56.093 [main] INFO yelpreview.PrepareDataset - Preprocessing...
-10:45:56.101 [main] INFO yelpreview.PrepareDataset - Set raw data path to C:\Users\administered\Desktop\zhouquan\skymind\yelp_review_full_csv\yelp_review_full_csv
-10:45:56.102 [main] INFO yelpreview.PrepareDataset - Set data path to D:\myWorld\eclipseWorkSpace\deeplearning4j\LabelledReviews
-10:45:56.103 [main] INFO yelpreview.PrepareDataset - Set the ratio of trainset is 0.9
-10:45:56.103 [main] INFO yelpreview.PrepareDataset - Set the factor of testset is 1.1
-10:46:01.443 [main] INFO yelpreview.PrepareDataset - number of class1: 139999
-10:46:01.443 [main] INFO yelpreview.PrepareDataset - number of class2: 140000
-10:46:01.443 [main] INFO yelpreview.PrepareDataset - number of class3: 140000
-10:46:01.443 [main] INFO yelpreview.PrepareDataset - number of class4: 140000
-10:46:01.443 [main] INFO yelpreview.PrepareDataset - number of class5: 139999
-10:46:01.443 [main] INFO yelpreview.PrepareDataset - Create streams for each training or testing files.
-10:46:01.508 [main] INFO yelpreview.PrepareDataset - Start to write data...
-10:46:08.845 [main] INFO yelpreview.PrepareDataset - Clearing resources.
-10:46:08.847 [main] INFO yelpreview.PrepareDataset - Done
+10:54:35.763 [main] INFO yelpreview.PrepareDataset - Preprocessing...
+10:54:35.771 [main] INFO yelpreview.PrepareDataset - Set raw data path to C:\Users\administered\Desktop\zhouquan\skymind\yelp_review_full_csv\yelp_review_full_csv
+10:54:35.772 [main] INFO yelpreview.PrepareDataset - Set data path to D:\myWorld\eclipseWorkSpace\deeplearning4j\LabelledReviews
+10:54:35.773 [main] INFO yelpreview.PrepareDataset - Set the ratio of trainset is 0.9
+10:54:35.773 [main] INFO yelpreview.PrepareDataset - Set the factor of testset is 1.1
+10:54:41.048 [main] INFO yelpreview.PrepareDataset - number of class1: 139999
+10:54:41.048 [main] INFO yelpreview.PrepareDataset - number of class2: 140000
+10:54:41.048 [main] INFO yelpreview.PrepareDataset - number of class3: 140000
+10:54:41.048 [main] INFO yelpreview.PrepareDataset - number of class4: 140000
+10:54:41.048 [main] INFO yelpreview.PrepareDataset - number of class5: 139999
+10:54:41.048 [main] INFO yelpreview.PrepareDataset - Create streams for each training or testing file.
+10:54:41.115 [main] INFO yelpreview.PrepareDataset - Start to write data...
+10:54:48.362 [main] INFO yelpreview.PrepareDataset - Clearing resources.
+10:54:48.364 [main] INFO yelpreview.PrepareDataset - Done
