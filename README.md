@@ -108,6 +108,6 @@ java -jar TestReviews.jar /your/config/path
 Key in a sentence into the input box, 
 click the 'Check' button. Then it shows the category of that sentence.
 
-![Inference_UI](./imgs/Inference_UI.PNG)
+<div align=center><img src="./imgs/Inference_UI.PNG"></div>
 
 
