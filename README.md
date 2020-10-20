@@ -1,5 +1,6 @@
 # yelpreview_text_classification_dl4j
-use dl4j to do a simple nlp classification task.
+First time to use DL4J to do a simple nlp classification task. 
+Couldn't try many times to make a better model without a charming GPU at home.
 
 # 1. Objective
 Create an app to predict the customers’ rating score using DL4J
@@ -21,24 +22,26 @@ inference
 
 1. The completion of given tasks.
 2. Machine learning pipelines.
-3. The accuracy of the model.
+3. The accuracy of the model. (See [Result](https://github.com/jackspiderman/yelpreview_text_classification_dl4j#2-results))
 4. The cleanliness and the structure of the code.
 
 ## 1.3 Submit Items
-1. .jar files of your codes together with trained model.
-2. Source code (put it on GitHub)
-3. Log files (model training logs file is required).
+1. .jar files of your codes together with trained model. (See on [Baidu Yunpan]() )
+2. Source code (put it on [GitHub]())
+3. Log files (model training logs file is required. See [train.log]()).
 
-# 2. Results
-## 2.1 Model Performance on Dataset (10% as test set)
+# 2. Model Performance on Dataset (10% as test set)
+## 2.1 Evaluation Metrics
 |  Index   | Epoch  | Accuracy  | Precision  | Recall | F1 Score |
 |  ----  | ----  | ----  | ----  | ----  | ----  |
 | 1  | 1 | 0.6162  | 0.6194 | 0.6162  | 0.6172 |
 | 2  | 2 | 0.6238  | 0.6302 | 0.6238  | 0.6258 |
-| 3  | 3 |   |  |   |  |
-| 4  | 4 |   |  |   |  |
+| 3  | 3 |  0.6267 | 0.6326 | 0.6267  | 0.6284 |
+| 4  | 4 |  0.6318 | 0.6369 | 0.6318  | 0.6334 |
 
-## 2.2 1st epoch
+## 2.2 Confusion Matrix
+
+## 2.2.1 1st epoch
 |  0  | 1| 2 | 3  | 4 |  |
 |  ----  | ----  | ----  | ----  | ----  | ----  |
 | 9213  | 2873  | 374 | 56| 83 | 0 = 0|
@@ -47,7 +50,7 @@ inference
 | 160 | 317 | 2701  | 6722 | 2699  | 3 = 3|
 | 195 | 132 | 484  | 3084 | 8704  | 4 = 4|
 
-## 2.3 2nd epoch
+### 2.2.2 2nd epoch
 |  0  | 1| 2 | 3  | 4 |  |
 |  ----  | ----  | ----  | ----  | ----  | ----  |
 | 9287  | 2894  | 310 | 49| 59 | 0 = 0|
@@ -56,5 +59,32 @@ inference
 | 154 | 357 | 2933  | 6819 | 2336  | 3 = 3|
 | 173 | 161 | 563  | 3354 | 8348  | 4 = 4|
 
-## 2.4 3th epoch
- 
+### 2.2.3 3th epoch
+ |  0  | 1| 2 | 3  | 4 |  |
+|  ----  | ----  | ----  | ----  | ----  | ----  |
+| 9460  | 2726  | 324 | 35| 54 | 0 = 0|
+| 2481 | 7186 | 2757  | 117 | 58  | 1 = 1|
+| 461 | 2471 | 7641  | 1833 | 193 | 2 = 2|
+| 145 | 354 | 2929  | 6907 | 2264  | 3 = 3|
+| 179 | 160 | 543  | 3430 | 8287  | 4 = 4|
+
+### 2.2.4 4th epoch
+ |  0  | 1| 2 | 3  | 4 |  |
+|  ----  | ----  | ----  | ----  | ----  | ----  |
+| 9505  | 2682  | 313 | 39| 60 | 0 = 0|
+| 2448 | 7224 | 2735  | 130 | 62  | 1 = 1|
+| 424 | 2441 | 7669  | 1856 | 209 | 2 = 2|
+| 128 | 334 | 2822  | 7003 | 2312  | 3 = 3|
+| 155 | 148 | 498  | 3400 | 8398  | 4 = 4|
+  
+  # 3. Usage
+  
+  ## 3.1 edit configuration file
+  following properities should be set before using.
+  dataDir = /the/path/of/yelpreview
+  
+  
+  ## 3.2 Prepare Training Data and Testing Data
+  ```
+java -jar PrepareDataset.jar /your/config/path
+```
