@@ -45,6 +45,9 @@ import org.slf4j.Logger;
  * and see the predicted category right to the Check button
  * <p>
  * <b></b>KIT Solutions Pvt. Ltd. (www.kitsol.com)</b>
+ * 
+ * Mainly based on this code, just add some configurations and change the model loading methods.
+ * 
  */
 public class TestReviews extends javax.swing.JFrame {
 	
