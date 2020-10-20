@@ -16,19 +16,20 @@ metric score.
 6. Create a separate file for inference that loads in the saved model and allows user to key
 in review and predict the respective rating score.
 7. Create separate .jar for model training (which includes preprocessing steps) and
-inference
+inference.(See [PrepareData.jar](), [TrainReviews.jar]() and [TestReviews.jar]())
 
 ## 1.2 Evaluations
 
 1. The completion of given tasks.
 2. Machine learning pipelines.
-3. The accuracy of the model. (See [Result](https://github.com/jackspiderman/yelpreview_text_classification_dl4j#2-results))
+3. The accuracy of the model. (See [Results](https://github.com/jackspiderman/yelpreview_text_classification_dl4j#2-results))
 4. The cleanliness and the structure of the code.
 
 ## 1.3 Submit Items
 1. .jar files of your codes together with trained model. (See on [Baidu Yunpan](https://pan.baidu.com/s/1olbxijXOpF0mEhJ0WmyQZg), password:dl4j )
 2. Source code (put it on [GitHub](https://github.com/jackspiderman/yelpreview_text_classification_dl4j))
-3. Log files (model training logs file is required. See [train.log](https://github.com/jackspiderman/yelpreview_text_classification_dl4j/blob/main/train.log)).
+3. Log files (model training logs file is required. See [train.log](https://github.com/jackspiderman/yelpreview_text_classification_dl4j/blob/main/train.log))
+and [preprocessing.log]().
 
 # 2. Model Performance on Dataset (10% as test set)
 ## 2.1 Evaluation Metrics
@@ -79,32 +80,39 @@ inference
   
   # 3. Usage
   
-  ## 3.1 download best model or trained
+  ## 3.1 Download Word2Vector
+  Download Google Word2Vector pretrained model 
+  [GoogleNews-vectors-negative300.bin.gz](https://dl4jdata.blob.core.windows.net/resources/wordvectors/GoogleNews-vectors-negative300.bin.gz).
+  Then add path of the model to the configuration file. 
   
-  
-  ## 3.2 edit configuration file
+  ## 3.2 Edit configuration file
   following properities should be set before using.
+  ```
   dataDir = /the/path/of/yelpreview
+  ```
   
   
   ## 3.3 Prepare Training Data and Testing Data
+  Download the [PrepareDataset.jar]()
 ```
 java -jar PrepareDataset.jar /your/config/path
 ```
 
 ## 3.4 Train
+  Download the [TrainReviews.jar]()
 ```
 java -jar TrainReviews.jar /your/config/path
 ```
 
 
 ## 3.5 Inference
-Download the best [model](https://pan.baidu.com/s/1olbxijXOpF0mEhJ0WmyQZg) (pwd: dl4j)or train another one. 
-Then add path of the model to the configuration file. 
+Download the best [model](https://pan.baidu.com/s/1olbxijXOpF0mEhJ0WmyQZg) (pwd: dl4j) 
+ and the [TestReviews.jar]() 
+Then add paths of the model and TestReviews.jar to the configuration file. 
 ```
 java -jar TestReviews.jar /your/config/path
 ```
-### Example:
+### UI Example:
 Key in a sentence into the input box, 
 click the 'Check' button. Then it shows the category of that sentence.
 
