@@ -16,7 +16,7 @@ metric score.
 6. Create a separate file for inference that loads in the saved model and allows user to key
 in review and predict the respective rating score.
 7. Create separate .jar for model training (which includes preprocessing steps) and
-inference.(See [PrepareData.jar](), [TrainReviews.jar]() and [TestReviews.jar]())
+inference.
 
 ## 1.2 Evaluations
 
@@ -88,15 +88,18 @@ and [preprocessing.log](https://github.com/jackspiderman/yelpreview_text_classif
   ## 3.2 Edit configuration file
   following properities should be set before using.
   ```
-rawDataDir=/your/yelp_review_full_csv/file/path
-dataDir=/your/post/data/directory
+rawDataPath=/path/yelp_review_full_csv
+dataDir=/path/postprocess
 trainRatio=0.9
 testFactor=1.1
+wordVectorsPath=/path/GoogleNews-vectors-negative300.bin.gz
+modelDir=/path/bestmodel/ReviewsModel_biLstmLayers_e4.net
+categoriesDir=/path/categories.txt
   ```
   
   
   ## 3.3 Prepare Training Data and Testing Data
-  Download the [PrepareDataset.jar]()
+  Download the [PrepareDataset.jar](https://pan.baidu.com/s/1vcGniK4RfO97XaaoTdrgLA) (password: dl4j)
 ```
 java -jar PrepareDataset.jar /your/config/path
 ```
@@ -107,16 +110,16 @@ Modify JVM settings to
 ```
 -Xms1G -Xmx8G -Dorg.bytedeco.javacpp.maxbytes=14G -Dorg.bytedeco.javacpp.maxphysicalbytes=16G
 ```
-  Download the [TrainReviews.jar]()
+  Download the [TrainReviews.jar](https://pan.baidu.com/s/1LertYV87IA78ZghzFINCMw) (password: dl4j) 
 ```
 java -jar TrainReviews.jar /your/config/path
 ```
 
 
 ## 3.5 Inference
-Download the best [model](https://pan.baidu.com/s/1olbxijXOpF0mEhJ0WmyQZg) (pwd: dl4j) 
- and the [TestReviews.jar]() 
-Then add paths of the model and TestReviews.jar to the configuration file. 
+Download the best [model](https://pan.baidu.com/s/1olbxijXOpF0mEhJ0WmyQZg) (password: dl4j) 
+ and the [TestReviews.jar](https://pan.baidu.com/s/1_gyWTb1o1koecC1H0LqGGw) (password: dl4j) , and copy [Categories.txt]() to your local directory.
+Then edit those paths to the configuration file. 
 ```
 java -jar TestReviews.jar /your/config/path
 ```
